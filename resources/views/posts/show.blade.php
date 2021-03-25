@@ -5,6 +5,8 @@
         <div class="text-lg text-gray-500 mb-2">
             {!! $post->extract !!}
         </div>
+        <p class="text-xs text-gray-500 mb-2">{!! $post->created_at->format('d/m/Y') !!} </p>
+        <p class="text-xs text-gray-500 mb-2"> Escrito por {!! $post->user->name !!} </p>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             
@@ -43,6 +45,14 @@
                         @endforeach
                     </ul>
                 </aside>
+                
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+            
         </div>
     </div>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-605965646ec6af3f"></script>
+
 </x-app-layout>

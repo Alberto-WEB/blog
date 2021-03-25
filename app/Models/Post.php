@@ -6,7 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
-{
+{   
+    // funcion para retirnar el campo slug
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 
     use HasFactory;
 

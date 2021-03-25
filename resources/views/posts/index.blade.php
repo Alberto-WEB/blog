@@ -11,11 +11,12 @@
                             @endforeach
                         </div>
 
-                        <h1 class="text-4xl text-white leading-8 font-bold mt-2">
-                            <a href="{{ route('posts.show', $post) }}">
-                                {{ $post->name }}
-                            </a>
-                        </h1>
+                            <h1 class="text-4xl text-white leading-8 font-bold mt-2">
+                                <a href="{{ route('posts.show', $post) }}">
+                                    {{ $post->name }}
+                                </a>
+                                <h6 class="text-white">{{ $post->created_at->format('d/m/Y') }}</h6>
+                            </h1>
                    </div>
                 </article>
             @endforeach
