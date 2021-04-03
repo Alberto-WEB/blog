@@ -5,6 +5,7 @@
         <div class="text-lg text-gray-500 mb-2">
             {!! $post->extract !!}
         </div>
+
         <p class="text-xs text-gray-500 mb-2"> Escrito por {!! $post->user->name !!} </p>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">

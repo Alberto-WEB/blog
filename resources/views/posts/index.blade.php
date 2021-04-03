@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="container py-8">
+    <div class="container py-6">
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach ($posts as $post)
