@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Codevs')
+@section('title', 'Siur | Publicaciones')
 
 @section('content_header')
 

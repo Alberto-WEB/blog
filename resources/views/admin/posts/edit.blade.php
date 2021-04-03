@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Codevs')
+@section('title', 'Siur | Editar publicaciones')
 
 @section('content_header')
     <h1>Editar post</h1>

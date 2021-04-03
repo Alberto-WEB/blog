@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Codevs')
+@section('title', 'Siur | Editar etiqueta')
 
 @section('content_header')
     <h1>Editar etiqueta</h1>

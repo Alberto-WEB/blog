@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Codevs')
+@section('title', 'Siur | Lista de categorias')
 
 @section('content_header')
     <h1>Lista de categoria</h1>

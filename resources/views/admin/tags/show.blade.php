@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Codevs')
+@section('title', 'Siur')
 
 @section('content_header')
     <h1>Mostrar detalle de etiqueta</h1>

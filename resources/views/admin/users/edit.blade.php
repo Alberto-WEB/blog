@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Codevs')
+@section('title', 'Siur | Editar usuarios')
 
 @section('content_header')
     <h1>Asignar un rol</h1>
