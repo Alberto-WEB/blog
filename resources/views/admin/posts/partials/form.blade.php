@@ -8,7 +8,7 @@
 </div>
 
 <div class="form-group">
-{!! Form::label('slug', 'Slug') !!}
+{!! Form::label('slug', 'Url') !!}
 {!! Form::text('slug', null, ['class' => 'form-control', 'placeholder' => 'Ingrese el slug del post', 'readonly']) !!}
 
 @error('slug')
@@ -83,12 +83,12 @@
     
     </div>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, obcaecati ad! Ipsam sint, autem quibusdam consequuntur totam error, libero modi sapiente odio eveniet voluptatem cum est atque nulla repudiandae? Quod.</p>
+    <p>Puedes agregar la imagen para vizualizar como se vera al publicarla.</p>
 </div>
 </div>
 
 <div class="form-group">
-{!! Form::label('extract', 'Extracto') !!}
+{!! Form::label('extract', 'Extracto (Aqui podras colocar una pequeña introduccion de tu post)') !!}
 {!! Form::textarea('extract', null, ['class' => 'form-control']) !!}
 
 @error('extract')
@@ -97,7 +97,7 @@
 </div>
 
 <div class="form-group">
-{!! Form::label('body', 'Cuerpo del post') !!}
+{!! Form::label('body', 'Cuerpo del post (Aqui podras describir como tu lo deses tu post)') !!}
 {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
 
 @error('body')
