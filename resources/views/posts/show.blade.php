@@ -21,7 +21,7 @@
                     @endif
                 </figure>
 
-                <div class="text-base text-gray-500 mt-4">
+                <div class="estilos text-base text-gray-500 mt-4">
                     {!! $post->body !!}
                 </div>
             </div>

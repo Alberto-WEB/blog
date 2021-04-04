@@ -1,6 +1,8 @@
 @extends('adminlte::page')
 
 @section('title', 'Siur | Crear Publicacion')
+<link rel="shortcut icon" href="{{ asset('images/logo_white.png') }}" type="image/png">
+
 
 @section('content_header')
     <h1>Crear nuevo post</h1>

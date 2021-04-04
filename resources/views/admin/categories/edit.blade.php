@@ -1,6 +1,8 @@
 @extends('adminlte::page')
 
 @section('title', 'Siur | Editar categoria')
+<link rel="shortcut icon" href="{{ asset('images/logo_white.png') }}" type="image/png">
+
 
 @section('content_header')
     <h1>Editar Categoria</h1>

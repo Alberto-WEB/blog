@@ -32702,6 +32702,49 @@ select{
   }
 }
 
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 170%;
+}
+
+h3 {
+  font-size: 160%;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+p {
+  text-align: justify;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
 @media (min-width: 640px){
   .sm\:prose{
     color: #374151;
