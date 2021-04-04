@@ -4,9 +4,9 @@
 <link rel="shortcut icon" href="{{ asset('images/logo_white.png') }}" type="image/png">
 
 @section('content_header')
-    <h1>Siur</h1>
+
 @stop
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
+    <img src="{{ asset('images/fondo_web.png') }}" class="img-fluid" alt="Admin Blog Siur" />
 @stop
