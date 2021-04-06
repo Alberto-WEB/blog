@@ -38,6 +38,6 @@ class UserSeeder extends Seeder
 
         ])->assignRole('Blogger');
         
-        User::factory(99)->create();
+        //User::factory(99)->create();
     }
 }
