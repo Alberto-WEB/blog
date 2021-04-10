@@ -4,7 +4,7 @@
 
         <!-- Mobile menu button-->
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <button x-on:click="open = true" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
+          <button x-on:click="open = true" class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <!-- Icon when menu is closed. -->
             <!--
@@ -61,7 +61,7 @@
           <!-- Profile dropdown -->
           <div class="ml-3 relative" x-data="{ open: false }">
             <div>
-              <button x-on:click="open = true" class="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-haspopup="true">
+              <button x-on:click="open = true" class="bg-blue-300 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-400 focus:ring-white" id="user-menu" aria-haspopup="true">
                 <span class="sr-only">Open user menu</span>
                 <img class="h-8 w-8 rounded-full" src="{{ auth()->user()->profile_photo_url }}" alt="">
               </button>
@@ -77,15 +77,15 @@
                 To: "transform opacity-0 scale-95"
             -->
             <div x-show="open" x-on:click.away="open = false" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
-              <a href="{{ route('profile.show') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Tu Perfil</a>
+              <a href="{{ route('profile.show') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50" role="menuitem">Tu Perfil</a>
 
               @can('admin.home')
-                <a href="{{ route('admin.home') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Dashboard</a>
+                <a href="{{ route('admin.home') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50" role="menuitem">Dashboard</a>
               @endcan
 
               <form method="POST" action="{{ route('logout') }}">
                 @csrf
-              <a href="{{ route('logout') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem"  onclick="event.preventDefault();
+              <a href="{{ route('logout') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50" role="menuitem"  onclick="event.preventDefault();
               this.closest('form').submit();">
                 Cerrar Sesion
               </a>
@@ -109,11 +109,9 @@
     {{-- menu movil --}}
     <div class="sm:hidden" x-show="open" x-on:click.away="open = false">
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-{{--         <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
- --}}     
+          
         @foreach ($categories as $category)
-            <a href="{{ route('posts.category', $category) }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">{{ $category->name }}</a>
+            <a href="{{ route('posts.category', $category) }}" class="text-gray-300 hover:bg-blue-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">{{ $category->name }}</a>
         @endforeach
 
       </div>
